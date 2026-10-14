@@ -2,6 +2,7 @@ import { Header } from "../components/Header";
 import { ArrowLeftRight, ArrowUpRight, ArrowDownLeft } from 'lucide-react';
 import { DebitCard } from "../components/DebitCard";
 import { DashboardButton } from "../components/DashboardButton";
+import { RecentTransactionCard } from "../components/RecentTransactionCard";
 
 export default function Dashboard() {
     return (
@@ -22,6 +23,19 @@ export default function Dashboard() {
                     <DashboardButton>
                         <ArrowDownLeft />
                     </DashboardButton>
+                </div>
+                <div className="flex flex-col gap-5">
+                    <div className="flex flex-row justify-between">
+                        <h2>Recent Transactions</h2>
+                        <button className="text-[#5b5b5b]">
+                            See all
+                        </button>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        <RecentTransactionCard />
+                        <RecentTransactionCard />
+                        <RecentTransactionCard />
+                    </div>
                 </div>
             </div>
         </div>
