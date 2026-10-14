@@ -1,9 +1,11 @@
+import Dashboard from "./pages/Dashboard";
+
 function App() {
   return (
     <>
-      <p>finance tracker</p>
+      <Dashboard />
     </>
-  )
+  );
 }
 
 export default App
