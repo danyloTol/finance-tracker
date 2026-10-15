@@ -46,7 +46,7 @@ export const DebitCardsCarousel = ({wallet}: CarouselProps) => {
                     className="flex transition-transform duration-500 ease-out"
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
-                    {wallet.map((card, index) => (
+                    {wallet.map((card) => (
                         <div 
                             key={card.name} 
                             className="w-full shrink-0 flex justify-center"
