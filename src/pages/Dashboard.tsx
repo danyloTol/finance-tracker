@@ -1,8 +1,14 @@
 import { Header } from "../components/Header";
 import { ArrowLeftRight, ArrowUpRight, ArrowDownLeft } from 'lucide-react';
-import { DebitCard } from "../components/DebitCard";
 import { DashboardButton } from "../components/DashboardButton";
 import { RecentTransactionCard } from "../components/RecentTransactionCard";
+import { DebitCardsCarousel } from "../components/DebitCardsCarousel";
+
+const accounts = [
+    { type: 'debit card', name: '9932', balance: 3245.32 },
+    { type: 'debit card', name: '2356', balance: 1434.32 },
+    { type: 'debit card', name: '2342', balance: 1556.43 }
+]
 
 export default function Dashboard() {
     return (
@@ -11,7 +17,7 @@ export default function Dashboard() {
                 <Header />
                 <div className="flex flex-col gap-2">
                     <h1 className="text-lg">Your wallet</h1>
-                    <DebitCard />
+                    <DebitCardsCarousel wallet={accounts} />
                 </div>
                 <div className="flex justify-between w-full text-[#ffffff]">
                     <DashboardButton>
