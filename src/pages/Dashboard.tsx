@@ -13,7 +13,7 @@ const accounts = [
 export default function Dashboard() {
     return (
         <div className="w-full">
-            <div className="flex flex-col gap-5 max-w-[320px] mx-auto mt-4">
+            <div className="min-h-screen flex flex-col justify-between max-w-[320px] mx-auto pt-4">
                 <Header />
                 <div className="flex flex-col gap-2">
                     <h1 className="text-lg">Your wallet</h1>
@@ -37,7 +37,7 @@ export default function Dashboard() {
                             See all
                         </button>
                     </div>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 pb-4">
                         <RecentTransactionCard />
                         <RecentTransactionCard />
                         <RecentTransactionCard />
