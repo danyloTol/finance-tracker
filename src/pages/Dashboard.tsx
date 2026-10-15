@@ -20,13 +20,13 @@ export default function Dashboard() {
                     <DebitCardsCarousel wallet={accounts} />
                 </div>
                 <div className="flex justify-between w-full text-[#ffffff]">
-                    <DashboardButton>
+                    <DashboardButton title="Swap">
                         <ArrowLeftRight />
                     </DashboardButton>
-                    <DashboardButton>
+                    <DashboardButton title="Send">
                         <ArrowUpRight />
                     </DashboardButton>
-                    <DashboardButton>
+                    <DashboardButton title="Receive">
                         <ArrowDownLeft />
                     </DashboardButton>
                 </div>
