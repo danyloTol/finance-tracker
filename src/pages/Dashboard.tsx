@@ -1,7 +1,6 @@
 import { Header } from "../components/Header";
 import { ArrowLeftRight, ArrowUpRight, ArrowDownLeft } from 'lucide-react';
 import { DashboardButton } from "../components/DashboardButton";
-import { RecentTransactionCard } from "../components/RecentTransactionCard";
 import { DebitCardsCarousel } from "../components/DebitCardsCarousel";
 import { RecentTransactions } from "../components/RecentTransactions";
 
