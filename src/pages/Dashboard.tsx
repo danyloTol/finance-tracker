@@ -3,11 +3,19 @@ import { ArrowLeftRight, ArrowUpRight, ArrowDownLeft } from 'lucide-react';
 import { DashboardButton } from "../components/DashboardButton";
 import { RecentTransactionCard } from "../components/RecentTransactionCard";
 import { DebitCardsCarousel } from "../components/DebitCardsCarousel";
+import { RecentTransactions } from "../components/RecentTransactions";
 
 const accounts = [
     { type: 'debit card', name: '9932', balance: 3245.32 },
     { type: 'debit card', name: '2356', balance: 1434.32 },
-    { type: 'debit card', name: '2342', balance: 1556.43 }
+    { type: 'debit card', name: '2342', balance: 1556.43 },
+]
+
+const transactions = [
+    {name: 'shop', type: 'expense', category: 'category', amount: 239.12},
+    {name: 'shop1', type: 'income', category: 'category1', amount: 239.12},
+    {name: 'shop2', type: 'expense', category: 'category2', amount: 239.12},
+    {name: 'shop3', type: 'income', category: 'category3', amount: 239.12},
 ]
 
 export default function Dashboard() {
@@ -30,18 +38,8 @@ export default function Dashboard() {
                         <ArrowDownLeft />
                     </DashboardButton>
                 </div>
-                <div className="flex flex-col gap-5">
-                    <div className="flex flex-row justify-between">
-                        <h2>Recent Transactions</h2>
-                        <button className="text-[#5b5b5b]">
-                            See all
-                        </button>
-                    </div>
-                    <div className="flex flex-col gap-3 pb-4">
-                        <RecentTransactionCard />
-                        <RecentTransactionCard />
-                        <RecentTransactionCard />
-                    </div>
+                <div>
+                    <RecentTransactions transactions={transactions} />
                 </div>
             </div>
         </div>
