@@ -11,13 +11,15 @@ const accounts = [
 ]
 
 const transactions = [
-    {name: 'shop', type: 'expense', category: 'category', amount: 239.12},
-    {name: 'shop1', type: 'income', category: 'category1', amount: 239.12},
-    {name: 'shop2', type: 'expense', category: 'category2', amount: 239.12},
-    {name: 'shop3', type: 'income', category: 'category3', amount: 239.12},
+    {name: 'shop', type: 'expense', category: 'category', amount: 239.12, date: "2026-10-16"},
+    {name: 'shop1', type: 'income', category: 'category1', amount: 239.12, date: "2026-10-16"},
+    {name: 'shop2', type: 'expense', category: 'category2', amount: 239.12, date: "2026-10-15"},
+    {name: 'shop3', type: 'income', category: 'category3', amount: 239.12, date: "2026-10-12"},
 ]
 
 export default function Dashboard() {
+    
+
     return (
         <div className="w-full">
             <div className="min-h-screen flex flex-col justify-between max-w-[320px] mx-auto pt-4">
